@@ -1,4 +1,4 @@
-// --- Directions
+ // --- Directions
 // Given a string, return true if the string is a palindrome
 // or false if it is not.  Palindromes are strings that
 // form the same word if it is reversed. *Do* include spaces
@@ -7,6 +7,24 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+
+    let reversed = '';
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+
+        reversed = char + reversed;
+    };
+
+    // if (reversed === str) {
+    //     return true;
+    // } else {
+    //     return false;
+    // };
+    return str === reversed 
+   
+}
 
 module.exports = palindrome;
+ 
